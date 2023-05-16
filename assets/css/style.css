@@ -126,6 +126,7 @@ h6 {
   display: inline-block;
 }
 
+
 .get-started-btn:hover {
   background: #111111;
   color: #fff;
@@ -409,10 +410,28 @@ h6 {
   background: #e03a3c;
   border: 2px solid #e03a3c;
 }
+#hero .loginbtn
+{
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 10px 30px;
+  border-radius: 4px;
+  margin-top: 30px;
+  background: transparent;
+  border: 2px solid #fff;
+  
+}
 
 #hero .btn-get-started:hover {
   background: transparent;
   border-color: #fff;
+}
+#hero .loginbtn:hover {
+  background: transparent;
+  border-color: #e03a3c;
 }
 
 @media (max-width: 768px) {
