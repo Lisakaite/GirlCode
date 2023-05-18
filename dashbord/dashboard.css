@@ -1,0 +1,53 @@
+*{
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    margin: 0;
+    
+}
+nav{
+    position: fixed;
+    padding-top: 20px;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100%;
+    background-image: url(pexels-mudassir-ali-2680270.jpg);
+}
+main{
+    margin-left: 250px;
+    
+    
+
+}
+header{
+    width: 250px;
+    font-size: 27px ;
+    font-weight: bold;
+    height: 75px;
+    background-color: rgb(168, 175, 175);
+    padding-bottom: 50px;
+}
+nav ul{
+    list-style: none;
+    padding: 0%;
+    margin: 0%;
+}
+nav ul li{
+    padding: 20px 10px;
+    font-size: 20px;
+    border-bottom: 2px solid #333;
+}
+nav ul li a{
+    text-decoration: none;
+    color: black;
+}
+nav ul li a i{
+    color: aliceblue;
+}
+.mother{
+    background-image: url(pexels-mudassir-ali-2680270.jpg)
+    
+}
+

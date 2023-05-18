@@ -1,0 +1,16 @@
+.p-3 border bg-light text-center{
+    box-shadow: 3px 4px;
+}
+.summary{
+    box-sizing: fixed;
+    height: 200px;
+    width: 1700px;
+    background-color: grey;
+    text-align: center;
+    padding-top: 30px;
+}
+.head{
+    padding-bottom: 20px;
+    text-transform: none;
+    text-align:center;
+}
