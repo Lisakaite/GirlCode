@@ -5,12 +5,41 @@
     box-sizing: fixed;
     height: 200px;
     width: 1700px;
-    background-color: grey;
+    background-color: rgb(15, 15, 15);
     text-align: center;
-    padding-top: 30px;
+    padding-top: 100px;
+    
 }
 .head{
     padding-bottom: 20px;
     text-transform: none;
     text-align:center;
 }
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+  .data{
+    width: 1700px;
+    padding-left: 200px;
+    padding-right: 470px;
+    font-size: larger;
+  }
+  .user{
+    float: right;
+    padding-right: 300px;
+    padding-bottom: 50px;
+    
+  }
+  
