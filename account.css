@@ -1,13 +1,17 @@
 .p-3 border bg-light text-center{
     box-shadow: 3px 4px;
+    
 }
 .summary{
     box-sizing: fixed;
-    height: 200px;
-    width: 1700px;
+    height: 350px;
+    width: 120%;
     background-color: rgb(15, 15, 15);
     text-align: center;
-    padding-top: 100px;
+    padding-top: 250px;
+    text-decoration: none;
+    
+    
     
 }
 .head{
@@ -18,7 +22,7 @@
 table {
     font-family: arial, sans-serif;
     border-collapse: collapse;
-    width: 100%;
+    width: 80%;
   }
   
   td, th {
