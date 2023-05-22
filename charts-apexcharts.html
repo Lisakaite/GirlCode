@@ -212,12 +212,12 @@
 
           <a class="nav-link nav-profile d-flex align-items-center pe-0" href="#" data-bs-toggle="dropdown">
             <img src="assets/img/team/team-2.jpg" alt="Profile" class="rounded-circle">
-            <span class="d-none d-md-block dropdown-toggle ps-2">Lynn Kembabazi</span>
+            <span class="d-none d-md-block dropdown-toggle ps-2">Lynne Kembabazi</span>
           </a><!-- End Profile Iamge Icon -->
 
           <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
             <li class="dropdown-header">
-              <h6>Lynn Kembabazi</h6>
+              <h6>Lynne Kembabazi</h6>
               <span>Web Designer</span>
             </li>
             <li>
@@ -393,7 +393,7 @@
         <div class="col-lg-6">
           <div class="card">
             <div class="card-body">
-              <h5 class="card-title">Line Chart</h5>
+              <h5 class="card-title">Line Chart (Personal Savings)</h5>
 
               <!-- Line Chart -->
               <div id="lineChart"></div>
@@ -439,7 +439,7 @@
         <div class="col-lg-6">
           <div class="card">
             <div class="card-body">
-              <h5 class="card-title">Area Chart</h5>
+              <h5 class="card-title">Area Chart(Participation Overtime) </h5>
 
               <!-- Area Chart -->
               <div id="areaChart"></div>
@@ -794,7 +794,7 @@
                   }
                   new ApexCharts(document.querySelector("#areaChart"), {
                     series: [{
-                      name: "STOCK ABC",
+                      name: "No. of people",
                       data: series.monthDataSeries1.prices
                     }],
                     chart: {
@@ -811,7 +811,7 @@
                       curve: 'straight'
                     },
                     subtitle: {
-                      text: 'Price Movements',
+                      text: 'Community Participation',
                       align: 'left'
                     },
                     labels: series.monthDataSeries1.dates,
@@ -838,7 +838,7 @@
         <div class="col-lg-6">
           <div class="card">
             <div class="card-body">
-              <h5 class="card-title">Bar Chart</h5>
+              <h5 class="card-title">Bar Chart(Active Regions)</h5>
 
               <!-- Bar Chart -->
               <div id="barChart"></div>
@@ -847,7 +847,7 @@
                 document.addEventListener("DOMContentLoaded", () => {
                   new ApexCharts(document.querySelector("#barChart"), {
                     series: [{
-                      data: [400, 430, 448, 470, 540, 580, 690, 1100, 1200, 1380]
+                      data: [500, 430, 448, 470, 540, 580, 690, 1100, 1200, 1380]
                     }],
                     chart: {
                       type: 'bar',
@@ -863,8 +863,8 @@
                       enabled: false
                     },
                     xaxis: {
-                      categories: ['South Korea', 'Canada', 'United Kingdom', 'Netherlands', 'Italy', 'France', 'Japan',
-                        'United States', 'China', 'Germany'
+                      categories: ['Makerere', 'Ntinda', 'Banda', 'Bweyogerere', 'Kiira', 'Nansana', 'Nakawa',
+                        'Naguru', 'Bugolobi', 'Mutungo'
                       ],
                     }
                   }).render();
@@ -879,7 +879,7 @@
         <div class="col-lg-6">
           <div class="card">
             <div class="card-body">
-              <h5 class="card-title">Pie Chart</h5>
+              <h5 class="card-title">Pie Chart(Target Goals)</h5>
 
               <!-- Pie Chart -->
               <div id="pieChart"></div>
@@ -895,7 +895,7 @@
                         show: true
                       }
                     },
-                    labels: ['Team A', 'Team B', 'Team C', 'Team D', 'Team E']
+                    labels: ['Farming', 'Land', 'Travel', 'Investment', 'Houses']
                   }).render();
                 });
               </script>
@@ -904,13 +904,14 @@
             </div>
           </div>
         </div>
-
+<!-----
         <div class="col-lg-6">
           <div class="card">
             <div class="card-body">
               <h5 class="card-title">Donut Chart</h5>
 
               <!-- Donut Chart -->
+              <!-----
               <div id="donutChart"></div>
 
               <script>
@@ -930,6 +931,9 @@
               </script>
               <!-- End Donut Chart -->
 
+
+
+              <!----
             </div>
           </div>
         </div>
@@ -940,6 +944,7 @@
               <h5 class="card-title">Radar Chart</h5>
 
               <!-- Radar Chart -->
+              <!-----
               <div id="radarChart"></div>
 
               <script>
@@ -960,7 +965,7 @@
                 });
               </script>
               <!-- End Radar Chart -->
-
+             
             </div>
           </div>
         </div>
