@@ -503,13 +503,10 @@
                     document.addEventListener("DOMContentLoaded", () => {
                       new ApexCharts(document.querySelector("#reportsChart"), {
                         series: [{
-                          name: 'Savings',
+                          name: 'Deposits',
                           data: [31, 40, 28, 51, 42, 82, 56],
                         }, {
-                          name: 'Revenue',
-                          data: [11, 32, 45, 32, 34, 52, 41]
-                        }, {
-                          name: 'Investments',
+                          name: 'Withdraws',
                           data: [15, 11, 32, 18, 9, 24, 11]
                         }],
                         chart: {
@@ -582,14 +579,14 @@
                 </div>
 
                 <div class="card-body">
-                  <h5 class="card-title">Recent Collections <span>/(Jan-July) </span></h5>
+                  <h5 class="card-title">Transaction history <span>/(Jan-July) </span></h5>
 
                   <table class="table table-borderless datatable">
                     <thead>
                       <tr>
-                        <th scope="col">#</th>
-                        <th scope="col">Customer</th>
-                        <th scope="col">Goal</th>
+                        <th scope="col">ID</th>
+                        <th scope="col">Transaction</th>
+                        <th scope="col">Admin</th>
                         <th scope="col">Amount</th>
                         <th scope="col">Status</th>
                       </tr>
@@ -597,44 +594,44 @@
                     <tbody>
                       <tr>
                         <th scope="row"><a href="#">#2457</a></th>
-                        <td>Lynn Kembabazi</td>
-                        <td><a href="#" class="text-primary">Travel</a></td>
+                        <td>Deposit</td>
+                        <td><a href="#" class="text-primary">Tubayo</a></td>
                         <td>45,000=</td>
                         <td><span class="badge bg-success">Received</span></td>
                       </tr>
                      
                       <tr>
                         <th scope="row"><a href="#">#2457</a></th>
-                        <td>Lynn Kembabazi</td>
-                        <td><a href="#" class="text-primary">Land</a></td>
+                        <td>Deposit</td>
+                        <td><a href="#" class="text-primary">Tubayo</a></td>
                         <td>50,000=</td>
                         <td><span class="badge bg-warning">Pending</span></td>
                       </tr>
                       <tr>
                         <th scope="row"><a href="#">#2457</a></th>
-                        <td>Lynn Kembabazi</td>
-                        <td><a href="#" class="text-primary">Travel</a></td>
+                        <td>Withdraw</td>
+                        <td><a href="#" class="text-primary">Tubayo</a></td>
                         <td>70,000=</td>
                         <td><span class="badge bg-success">Received</span></td>
                       </tr> <tr>
                         <th scope="row"><a href="#">#2457</a></th>
-                        <td>Lynn Kembabazi</td>
-                        <td><a href="#" class="text-primary">Education</a></td>
+                        <td>Deposit</td>
+                        <td><a href="#" class="text-primary">Tubayo</a></td>
                         <td>50,000=</td>
                         <td><span class="badge bg-warning">Pending</span></td>
                       </tr>
 
                       <tr>
                         <th scope="row"><a href="#">#2457</a></th>
-                        <td>Lynn Kembabazi</td>
-                        <td><a href="#" class="text-primar"></a></td>
+                        <td>Investment</td>
+                        <td><a href="#" class="text-primary">Tubayo</a></td>
                         <td>50,000=</td>
                         <td><span class="badge bg-danger">Rejected</span></td>
                       </tr>
                       <tr>
                         <th scope="row"><a href="#">#2457</a></th>
-                        <td>Lynn Kembabazi</td>
-                        <td><a href="#" class="text-primary">Land</a></td>
+                        <td>Withdraw</td>
+                        <td><a href="#" class="text-primary">Tubayo</a></td>
                         <td>50,000=</td>
                         <td><span class="badge bg-success">Received</span></td>
                       </tr>
