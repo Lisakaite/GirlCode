@@ -480,6 +480,7 @@
       theme: "snow"
     });
   }
+  /**services */
 
   /**
    * Initiate TinyMCE Editor
@@ -618,6 +619,63 @@
         })
       }).observe(mainContainer);
     }, 200);
+  }
+  const works = [
+    {
+      projectname: 'Tonic',
+      projectdescription: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+      detaileddescription: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
+      featuredimage: 'images/Snapshoot.png',
+      featuredimagedesktop: 'images/Snapshoot-Desktop1.png',
+      featuredimagepopup: 'assets/img/about.jpg',
+      technologies: ['HTML', 'CSS', 'JavaScript'],
+      linklive: '#',
+      linksource: '#',
+    },
+    {
+      projectname: 'Multi Post Stories',
+      projectdescription: 'Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.',
+      detaileddescription: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
+      featuredimage: 'images/Snapshoot2.png',
+      featuredimagedesktop: 'images/muilti.png',
+      featuredimagepopup: 'images/muilti.png',
+      technologies: ['HTML', 'CSS', 'JavaScript'],
+      linklive: '#',
+      linksource: '#',
+    },
+    {
+      projectname: 'Facebook 360',
+      projectdescription: 'Exploring the future of media in Facebook  first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.',
+      detaileddescription: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
+      featuredimage: 'images/Snapshoot3.png',
+      featuredimagedesktop: './images/Snapshoot.png',
+      featuredimagepopup: 'images/Snapshoot.png',
+      technologies: ['HTML', 'CSS', 'JavaScript'],
+      linklive: '#',
+      linksource: '#',
+    },
+    {
+      projectname: 'Uber Navigation',
+      projectdescription: 'A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.',
+      detaileddescription: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
+      featuredimage: 'images/Snapshoot4.png',
+      featuredimagedesktop: 'images/Snapshoot2.png ',
+      featuredimagepopup: 'images/Snapshoot2.png ',
+      technologies: ['HTML', 'CSS', 'JavaScript'],
+      linklive: '#',
+      linksource: '#',
+    },
+  ];
+  const worksgrid = document.getElementById('works-grid');
+  let popupblock = `<div id="container-exist" class="project-container"><div class="project-text-section"><div class="popup-heading"><h2 class="works-heading">${works[i].projectname}</h2><a href="#" class="popup-cancel" id="closeproject"><img src="./images/assets/desktop-popup-cancel.png"></a></div><div class="works-frame"><label class="frame-text1">Canopy</label><div class="frame-counter"><img src="images/Counter.png"></div><label class="frame-text2">Back End Dev</label><div class="frame-counter"><img src="images/Counter.png"></div><label class="frame-text2">2015</label></div><div class="img-container"><img class ="mobile-popup-image" src="${works[i].featuredimage}"></div><div class="img-container-desktop-popup"><img class="desktop-image" src="${works[i].featuredimagepopup}"></div></div><div class="popup-desktop-format"><p class="works-paragraph">${works[i].detaileddescription}</p><div class="popup-desktop-format-2"><ul class="works-list-popup"><li><label class="list-buttons">${works[i].technologies[0]}</label></li><li><label class="list-buttons">${works[i].technologies[1]}</label></li><li><label class="list-buttons">${works[i].technologies[2]}</label></li></ul><div class="popup-divider"></div><div class="project-button-section"><a href="${works[i].linklive}"class="works-button-1">See Live <img src="./images/assets/See-livve-icon.png"></img><a href="${works[i].linksource}"class="works-button-1">See Source <img src="./images/assets/github-button.png"></img></div></div></div><div class="navigation-links"><a class="popup-links" id="previous" href="#">Previous Project</a><a class="popup-links" id="next" href="#">Next Project</a></div></div>`;
+  const worksgrid1 = document.getElementById('works-grid');
+  for (let j = 0; j < works.length; j += 1) {
+    const codeblock = `<div id="works-1"> <div class="img-container"><img src="${works[j].featuredimage}"></div><div class="img-container-desktop"><img class="desktop-image" src="${works[j].featuredimagedesktop}"></div> <div class="works-contents"> <h2 class="works-heading">${works[j].projectname}</h2> <div class="works-frame"> <label class="frame-text1">Canopy</label> <div class="frame-counter"><img src="images/Counter.png"></div><label class="frame-text2">Back End Dev</label><div class="frame-counter"><img src="images/Counter.png"></div><label class="frame-text2">2015</label></div><p class="works-paragraph">${works[j].projectdescription}</p><ul class="works-list"><li><label class="list-buttons">${works[j].technologies[0]}</label></li><li><label class="list-buttons">${works[j].technologies[1]}</label></li><li><label class="list-buttons">${works[j].technologies[2]}</label></li></ul><button id="project${j}"class="works-button">See Project</button></div></div>`;
+    worksgrid.innerHTML += codeblock;
+  }
+  for (let j = 0; j < works.length; j += 1) {
+    popupblock = `<div id="project-popup${j}" class="project-popup-inactive"><div id="container-exist" class="project-container"><div class="project-text-section"><div class="popup-heading"><h2 class="works-heading">${works[j].projectname}</h2><a href="#" class="popup-cancel" id="closeproject${j}"><img src="./images/assets/desktop-popup-cancel.png"></a></div><div class="works-frame"><label class="frame-text1">Canopy</label><div class="frame-counter"><img src="images/Counter.png"></div><label class="frame-text2">Back End Dev</label><div class="frame-counter"><img src="images/Counter.png"></div><label class="frame-text2">2015</label></div><div class="img-container"><img class ="mobile-popup-image" src="${works[j].featuredimage}"></div><div class="img-container-desktop-popup"><img class="desktop-image" src="${works[j].featuredimagepopup}"></div></div><div class="popup-desktop-format"><p class="works-paragraph">${works[j].detaileddescription}</p><div class="popup-desktop-format-2"><ul class="works-list-popup"><li><label class="list-buttons">${works[j].technologies[0]}</label></li><li><label class="list-buttons">${works[j].technologies[1]}</label></li><li><label class="list-buttons">${works[j].technologies[2]}</label></li></ul><div class="popup-divider"></div><div class="project-button-section"><a href="${works[j].linklive}"class="works-button-1">See Live <img src="./images/assets/See-livve-icon.png"></img><a href="${works[j].linksource}"class="works-button-1">See Source <img src="./images/assets/github-button.png"></img></div></div></div><div class="navigation-links"><a class="popup-links" id="previous${j}" href="#">Previous Project</a><a class="popup-links" id="next${j}" href="#">Next Project</a></div></div></div>`;
+    worksgrid1.innerHTML += popupblock;
   }
 
 })();
