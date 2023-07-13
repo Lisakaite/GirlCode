@@ -43,7 +43,7 @@
   
   .card-content a {
     display: inline-block;
-    background-color: #d4111a;
+    background-color: #010414;
     color: #fff;
     text-decoration: none;
     padding: 8px 12px;
@@ -67,4 +67,15 @@
   .card {
     width: calc(100% - 40px);
   }
+}
+
+.img-container {
+margin-left: 0%;
+  margin-top: -0%;
+  width:2%;
+
+}
+
+.img-pair {
+  width:30px
 }

@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Pennywise Dashboard</title>
+  <title>Tubayo Dashboard</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -36,6 +36,7 @@
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
+ 
 </head>
 
 <body>
@@ -142,78 +143,14 @@
 
         </li><!-- End Notification Nav -->
 
-        <li class="nav-item dropdown">
-
-          <a class="nav-link nav-icon" href="#" data-bs-toggle="dropdown">
-            <i class="bi bi-chat-left-text"></i>
-            <span class="badge bg-success badge-number">3</span>
-          </a><!-- End Messages Icon -->
-
-          <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow messages">
-            <li class="dropdown-header">
-              You have 3 new messages
-              <a href="#"><span class="badge rounded-pill bg-primary p-2 ms-2">View all</span></a>
-            </li>
-            <li>
-              <hr class="dropdown-divider">
-            </li>
-
-            <li class="message-item">
-              <a href="#">
-                <img src="assets/img/team/team-4.jpg" alt="" class="rounded-circle">
-                <div>
-                  <h4>Mercy Toili</h4>
-                  <p>Hello happy to know you joined</p>
-                  <p>4 hrs. ago</p>
-                </div>
-              </a>
-            </li>
-            <li>
-              <hr class="dropdown-divider">
-            </li>
-
-            <li class="message-item">
-              <a href="#">
-                <img src="assets/img/favicon.png" alt="" class="rounded-circle">
-                <div>
-                  <h4>PennyWise</h4>
-                  <p>Payment received successfully.</p>
-                  <p>6 hrs. ago</p>
-                </div>
-              </a>
-            </li>
-            <li>
-              <hr class="dropdown-divider">
-            </li>
-
-            <li class="message-item">
-              <a href="#">
-                <img src="assets/img/favicon.png" alt="" class="rounded-circle">
-                <div>
-                  <h4>PennyWise</h4>
-                  <p>Dear Lynn, Thank you for choosing Pennywise to secure your debt free future.</p>
-                  <p>8 hrs. ago</p>
-                </div>
-              </a>
-            </li>
-            <li>
-              <hr class="dropdown-divider">
-            </li>
-
-            <li class="dropdown-footer">
-              <a href="#">Show all messages</a>
-            </li>
-
-          </ul><!-- End Messages Dropdown Items -->
-
-        </li><!-- End Messages Nav -->
+     
 
         <li class="nav-item dropdown pe-3">
 
           <a class="nav-link nav-profile d-flex align-items-center pe-0" href="#" data-bs-toggle="dropdown">
             <img src="assets/img/team/team-2.jpg" alt="Profile" class="rounded-circle">
             <span class="d-none d-md-block dropdown-toggle ps-2">Lynn Kembabazi</span>
-          </a><!-- End Profile Iamge Icon -->
+          </a><!-- End Profile Image Icon -->
 
           <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
             <li class="dropdown-header">
@@ -451,7 +388,7 @@
                 </div>
 
                 <div class="card-body">
-                  <h5 class="card-title">Revenue <span>| This Month(Ugx)</span></h5>
+                  <h5 class="card-title">Investments <span>| This Month(Ugx)</span></h5>
 
                   <div class="d-flex align-items-center">
                     <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
@@ -487,20 +424,55 @@
                 </div>
 
                 <div class="card-body">
-                  <h5 class="card-title">Investments <span>| This Year</span></h5>
+                  <h5 class="card-title">Deposits <span>| This Year</span></h5>
 
                   <div class="d-flex align-items-center">
                     <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
                       <i class="bi bi-people"></i>
                     </div>
                     <div class="ps-3">
-                      <h6>0</h6>
+                      <h6>1,000,000</h6><!--
                       <span class="text-danger small pt-1 fw-bold">(Coming Soon)</span> <span class="text-muted small pt-2 ps-1"></span>
+                      -->
+                    </div>
+                  </div>
+              <!-- Button at bottom right -->
+              <a href="deposit.html" class="btn btn-primary btn-sm float-end mt-3">Deposit Now</a>
+                </div>
+                
+              </div>
+              <div class="card info-card customers-card">
+
+                <div class="filter">
+                  <a class="icon" href="#" data-bs-toggle="dropdown"><i class="bi bi-three-dots"></i></a>
+                  <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
+                    <li class="dropdown-header text-start">
+                      <h6>Filter</h6>
+                    </li>
+
+                    <li><a class="dropdown-item" href="#">Today</a></li>
+                    <li><a class="dropdown-item" href="#">This Month</a></li>
+                    <li><a class="dropdown-item" href="#">This Year</a></li>
+                  </ul>
+                </div>
+
+                <div class="card-body">
+                  <h5 class="card-title">Withdraws <span>| This Year</span></h5>
+
+                  <div class="d-flex align-items-center">
+                    <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
+                      <i class="bi bi-people"></i>
+                    </div>
+                    <div class="ps-3">
+                      <h6 class="light-font-weight">300,000</h6><!--
+                      <span class="text-danger small pt-1 fw-bold">(Coming Soon)</span> <span class="text-muted small pt-2 ps-1"></span>-->
 
                     </div>
                   </div>
-
+                <!-- Button at bottom right -->
+                <a href="#" class="btn btn-primary btn-sm float-end mt-3">Withdraw Now</a>
                 </div>
+                
               </div>
 
             </div><!-- End Customers Card -->
@@ -532,13 +504,10 @@
                     document.addEventListener("DOMContentLoaded", () => {
                       new ApexCharts(document.querySelector("#reportsChart"), {
                         series: [{
-                          name: 'Savings',
+                          name: 'Deposits',
                           data: [31, 40, 28, 51, 42, 82, 56],
                         }, {
-                          name: 'Revenue',
-                          data: [11, 32, 45, 32, 34, 52, 41]
-                        }, {
-                          name: 'Investments',
+                          name: 'Withdraws',
                           data: [15, 11, 32, 18, 9, 24, 11]
                         }],
                         chart: {
@@ -611,14 +580,14 @@
                 </div>
 
                 <div class="card-body">
-                  <h5 class="card-title">Recent Collections <span>/(Jan-July) </span></h5>
+                  <h5 class="card-title">Transaction history <span>/(Jan-July) </span></h5>
 
                   <table class="table table-borderless datatable">
                     <thead>
                       <tr>
-                        <th scope="col">#</th>
-                        <th scope="col">Customer</th>
-                        <th scope="col">Goal</th>
+                        <th scope="col">ID</th>
+                        <th scope="col">Transaction</th>
+                        <th scope="col">Admin</th>
                         <th scope="col">Amount</th>
                         <th scope="col">Status</th>
                       </tr>
@@ -626,44 +595,44 @@
                     <tbody>
                       <tr>
                         <th scope="row"><a href="#">#2457</a></th>
-                        <td>Lynn Kembabazi</td>
-                        <td><a href="#" class="text-primary">Travel</a></td>
+                        <td>Deposit</td>
+                        <td><a href="#" class="text-primary">Tubayo</a></td>
                         <td>45,000=</td>
                         <td><span class="badge bg-success">Received</span></td>
                       </tr>
                      
                       <tr>
                         <th scope="row"><a href="#">#2457</a></th>
-                        <td>Lynn Kembabazi</td>
-                        <td><a href="#" class="text-primary">Land</a></td>
+                        <td>Deposit</td>
+                        <td><a href="#" class="text-primary">Tubayo</a></td>
                         <td>50,000=</td>
                         <td><span class="badge bg-warning">Pending</span></td>
                       </tr>
                       <tr>
                         <th scope="row"><a href="#">#2457</a></th>
-                        <td>Lynn Kembabazi</td>
-                        <td><a href="#" class="text-primary">Travel</a></td>
+                        <td>Withdraw</td>
+                        <td><a href="#" class="text-primary">Tubayo</a></td>
                         <td>70,000=</td>
                         <td><span class="badge bg-success">Received</span></td>
                       </tr> <tr>
                         <th scope="row"><a href="#">#2457</a></th>
-                        <td>Lynn Kembabazi</td>
-                        <td><a href="#" class="text-primary">Education</a></td>
+                        <td>Deposit</td>
+                        <td><a href="#" class="text-primary">Tubayo</a></td>
                         <td>50,000=</td>
                         <td><span class="badge bg-warning">Pending</span></td>
                       </tr>
 
                       <tr>
                         <th scope="row"><a href="#">#2457</a></th>
-                        <td>Lynn Kembabazi</td>
-                        <td><a href="#" class="text-primar"></a></td>
+                        <td>Investment</td>
+                        <td><a href="#" class="text-primary">Tubayo</a></td>
                         <td>50,000=</td>
                         <td><span class="badge bg-danger">Rejected</span></td>
                       </tr>
                       <tr>
                         <th scope="row"><a href="#">#2457</a></th>
-                        <td>Lynn Kembabazi</td>
-                        <td><a href="#" class="text-primary">Land</a></td>
+                        <td>Withdraw</td>
+                        <td><a href="#" class="text-primary">Tubayo</a></td>
                         <td>50,000=</td>
                         <td><span class="badge bg-success">Received</span></td>
                       </tr>
@@ -775,35 +744,35 @@
             </div>
 
             <div class="card-body pb-0">
-              <h5 class="card-title">News &amp; Updates <span>| Today</span></h5>
+              <h5 class="card-title">Services &amp; Offers <span>| Today</span></h5>
 
               <div class="news">
                 <div class="post-item clearfix">
-                  <img src="assets/img/news-1.jpg" alt="">
-                  <h4><a href="#">Latest News:</a></h4>
-                  <p>Industry Report: Online Retail Sales Surge by 30% in Q2 2023. <br> New Regulations Announced for Data Privacy in the Financial Sector.</p>
+                  <img src="assets/img/art.png" alt="">
+                  <h4><a href="#">Savings and Investments</a></h4>
+                  <p>Tubayo provides tools to track and invest youth savings for a prosperous future.</p>
                 </div>
 
                 <div class="post-item clearfix">
-                  <img src="assets/img/news-2.jpg" alt="">
-                  <h4><a href="#">Account Updates</a></h4>
-                  <p>Introducing Two-Factor Authentication: Enhance your account security by enabling this feature.</p>
+                  <img src="assets/img/Money-saving-tips.jpg" alt="">
+                  <h4><a href="#">Financial Education</a></h4>
+                  <p>We aim at sensitizing the youth about the importances of financial literacy and financial independence at large.</p>
                 </div>
 
                 <div class="post-item clearfix">
-                  <img src="assets/img/news-3.jpg" alt="">
-                  <h4><a href="#">Notifications</a></h4>
-                  <p>Important: Scheduled Maintenance Downtime on May 25th, 2023, from 10 PM to 2 AM (EAT).</p>
+                  <img src="assets/img/tabs-1.jpg" alt="">
+                  <h4><a href="#">Access to Financial Services</a></h4>
+                  <p>We are partnering with a number of financial institutions to provide you with quality services.</p>
                 </div>
 
                 <div class="post-item clearfix">
-                  <img src="assets/img/news-4.jpg" alt="">
-                  <h4><a href="#">Release Notes</a></h4>
-                  <p>Integration Update: New integration with Platform Y allows seamless data exchange and increased efficiency.</p>
+                  <img src="assets/img/About1.jpg" alt="">
+                  <h4><a href="#">Community Engagement</a></h4>
+                  <p>This promotes a supportive environment and encourages mutual learning as a the community comes together for a change.</p>
                 </div>
 
                 <div class="post-item clearfix">
-                  <img src="assets/img/news-5.jpg" alt="">
+                  <img src="assets/img/track.jpg" alt="">
                   <h4><a href="#">Account Highlights</a></h4>
                   <p>Monthly Performance Report: Analyze your account's key metrics and growth for May 2023.</p>
                 </div>
@@ -823,15 +792,9 @@
   <!-- ======= Footer ======= -->
   <footer id="footer" class="footer">
     <div class="copyright">
-      &copy; Copyright <strong><span>Pennywise</span></strong>. All Rights Reserved
+      &copy; Copyright <strong><span>Tubayo</span></strong>. All Rights Reserved
     </div>
-    <div class="credits">
-      <!-- All the links in the footer should remain intact. -->
-      <!-- You can delete the links only if you purchased the pro version. -->
-      <!-- Licensing information: https://bootstrapmade.com/license/ -->
-      <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/nice-admin-bootstrap-admin-html-template/ -->
-      Designed by <a href="#">GirlCode</a>
-    </div>
+   
   </footer><!-- End Footer -->
 
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
